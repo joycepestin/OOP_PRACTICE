@@ -1,19 +1,13 @@
-//Object Creation
-class Student
+//Prototype
+let stud1 = {name: "Joyce Ann " , course: "IT" , section: "2ITF" , 
+study:function(subject)
 {
-    constructor(name, course, section)
-    {
-        this.name = name;
-        this.course = course;
-        this.section = section;
-    }
+    console.log(`${this.name}, is enrolled in ${subject}`);
+}};
 
-    enrolled(subject)
-    {
-        console.log(`${this.name} , ${this.course} , is enrolled in ${this.section}`);
-        console.log(`He is studying ${subject}`);
-    }
-}
+//calling the study method
+//use the objcect syntx
 
-let stud1 = new Student("Joyce Ann Pestin" , "IT" , "2ITF");
-stud1.enrolled("ICS2609"); 
+let stud2 = {name: "Pedro" , course: "CS" , section: "2ITE"}; //di gagana kasi wlang study function
+
+stud1.study("ICS2609"); 
